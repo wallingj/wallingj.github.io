@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>project 2</title>
+	<link rel="stylesheet" type="text/css" href="projects.css">
+</head>
+<header class="header">
+	Treasure Hunter
+</header>
+<hr>
+<body>
+	<!-- home button -->
+	<a href="index.html#project2"><-</a>
+	<div class="description">
+		<div class="header prob">The Problem</div>
+		Given an inputted treasure map, output the optimal route to take to get to the treasure. <br><br>
+		The inputted map takes the form of a grid, where each grid element is either water, land, impassable terrain, the starting location, or the treasure location.
+		<div class="grid-images">
+		  <div class="grid-item-treasure badt"></div>
+		  <div class="grid-item-treasure goodt"></div>
+		</div>
+		Since the program needs to output the optimal route, the pirate crew must explore the map in such a way that once the treasure is found, they can "re-trace" their steps to reveal the optimal path. <br><br>
+		<div class="header sol">The Solution</div>
+		My program utilized two data structures (forms of data storage in programming) called stacks and queues in order to search the grid. <br><br>
+		While I searched the grid, I kept track of where I came from in order to output the optimal path when the crew found the treasure.
+		<br><br><br>
+		<!-- footer -->
+		<footer id="mainFooter">
+			<h3>Language: C++</h3>
+		</footer>
+	</div>
+</body>
+</html>

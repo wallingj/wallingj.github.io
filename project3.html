@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>project 3</title>
+	<link rel="stylesheet" type="text/css" href="projects.css">
+</head>
+<header class="header">
+	Comment Classifier
+</header>
+<hr>
+<body>
+	<!-- home button -->
+	<a href="index.html#project3"><-</a>
+	<div class="description">
+		<div class="header prob">The Problem</div>
+		Given a list of questions and comments about a variety of subjects, classify each post into one of several given categories. <br><br>
+		Yet computers don't speak english, so classifying the following is not as easy for a computer as it is for you and me. <br><br>
+		Given a list of categories such as:
+		<ul>
+			<li>Euchre (a card game)</li>
+			<li>Exams</li>
+			<li>Medieval Wars</li>
+		</ul>
+		and the comments:
+		<ul>
+			<li>"Did anyone complete the written part of the practice?"</li>
+			<li>"Red is suit so my queen beats your king"</li>
+			<li>"The Queen won"</li>
+		</ul>
+		A computer would generally have no idea which words are tied to which concept. <br>
+		We know that "practice" probably refers to a practice exam due to context clues, and that "red" being "suit" probably refers to a card game (since diamonds and hearts are red colored suits in a deck of cards). <br>
+		A computer however, would be completely lost classifing these comments into the categories. <br><br>
+		<div class="header sol">The Solution</div>
+		In order to classify comments into categories, a program must be trained what words are associated with each topic. <br><br>
+		However, it would be extremely tedious to manually pair words with certain topics. <br>
+		There are thousands and thousands of english words, so it would be extremely difficult to match each word to all of the categories it applies to (not to mentoin that words mean different things in different contexts, so not all meanings apply to a word all of the time). <br><br>
+		Instead, the program takes in past comments and questions that are already catergorized and assigns a probability that each word is tied to a given concept. <br>
+		In our example, maybe "written" is tied to "exam" with quite a high probability, yet "king" might be paired to euchre or medieval wars equally, as it is both a card and a leader in medieval times. <br><br>
+		When a new post is submitted, the program assesses all the probabilities of each of the words in the post and determines based off its most frequent category which category a post most likely responds to. 
+		<br><br><br>
+		<!-- footer -->
+		<footer id="mainFooter">
+			<h3>Language: C++</h3>
+		</footer>
+	</div>
+</body>
+</html>

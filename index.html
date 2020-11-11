@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <title>Jonathan Walling</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <main class="mainContainer">
+    <header class="mainHeader">
+      <ul id="navList">
+	<a href="#mainBackground"><li class="navElement"><i class="material-icons">home</i></li></a>
+	<a href="#about"><li class="navElement">About Me</li></a>
+	<a href="#education"><li class="navElement">Education</li></a>
+	<a href="#projects"><li class="navElement">Projects</li></a>
+	<a href="#questions"><li class="navElement">Questions</li></a>
+      </ul>
+    </header>
+    <body>
+      <!-- greeting -->
+      <div id="mainBackground">
+	<div id="greeting">
+	  <div id="greetingName">
+	    <div id="bigName">Jonathan Walling</div>
+	    <div id="smallName">Software Developer</div>
+	  </div>
+	  <div id="greetingTerminal">
+	    <div id="terminalTop">
+	      <div id="redOrb" class="orb"></div>
+	      <div id="yellowOrb" class="orb"></div>
+	      <div id="greenOrb" class="orb"></div>
+	      custom-bash
+	    </div>
+	    <div id="terminalBody">
+	      <h3> jonathan@HOME:~$ ./greeting</h3>
+	      <h2> Hello World!</h2>
+	      <h2> Welcome to my website :)</h2>
+	    </div>
+	  </div>
+	</div>
+      </div>
+      <!-- personal information  -->
+      <div id="about">
+	<div id="personalInfo">
+	  <div id="bio">
+	    Hi there!<br>
+	    My name is Jonathan and I develop software.<br><br>
+	    As an undergraduate student at the University of Michigan, I have been learning how to develop clean, efficient solutions to prolems via computation over the past couple of years. Some disciplines of Computer Science that really interest me include code optimization, database systems, and the intersection of computation and education.<br><br>
+	    In my freetime I enjoy rock climbing, listening to music, and hanging out with my friends.<br>
+	    Check me out on some other sites below :)<br>
+	    <div id="profileLinks">
+	      <i class="fa fa-linkedin-square" style="font-size:48px" onclick="location.href = 'https://www.linkedin.com/in/jonathan-walling/';"></i>
+	      <i class="fa fa-github" style="font-size:48px" onclick="location.href = 'https://github.com/wallingj';"></i>
+	    </div>
+	    <h3>Learn more about my work with the options below!</h3>
+	  </div>
+	</div>
+	<!-- options -->
+	<div id="options">
+	  <div id="grid-options">
+	    <div class="grid-container">
+	      <div class="grid-item ed" onclick='location.href = "#education"'><h1>Education</h1></div>
+	      <div class="grid-item pr" onclick='location.href = "#projects"'><h1>Projects</h1></div>
+	    </div>
+	  </div>
+	</div>
+      </div>
+
+      <!-- education -->
+      <div id="education">
+	<div id="skinnyEducation">
+	  <h2 id="educationTitle">Education</h2>
+	  <div id="educationHeader">
+	    <img src="m.png" id="blockM">
+	    <div class="left">
+	      <h4>University of Michigan</h4>
+	      <h4>Computer Science, B.S.</h4>
+	    </div>
+	    <div class="right">
+	      <h4>2018-2022</h4>
+	      <h4>Ann Arbor, MI</h4>
+	    </div>
+	  </div>
+	  <div class="clr"></div>
+	  <div id="coursework">
+	    <h5><u>Relevant Coursework</u></h5>
+	    <ul>
+	      <li>Database Management Systems</li>
+	      <li>Web Systems</li>
+	      <li>Introduction to Computer Organization</li>
+	      <li>Data Structures and Algorithms</li>
+	      <li>Foundations of Computer Science</li>
+	      <li>Computer Pragmatics</li>
+	      <li>Discrete Mathematics</li>
+	      <li>Programming and Introductory Data Structures</li>
+	    </ul>
+	  </div>
+	  <div id="langAndTech">
+	    <div id="languages">
+	      <h5><u>Languages</u></h5>
+	      <b class="outlineLang">C / C++</b>
+	      <b class="outlineLang">Python</b>
+	      <b class="outlineLang">JavaScript</b>
+	      <b class="outlineLang">Bash</b>
+	      <b class="outlineLang">HTML5</b>
+	      <b class="outlineLang">CSS3</b>
+	    </div>
+	    <div id="technologies">
+	      <h5><u>Technologies</u></h5>
+	      <b class="outlineTech">Version Control</b>
+	      <b class="outlineTech">Emacs</b>
+	      <b class="outlineTech">CLI / Unix Terminal</b>
+	      <b class="outlineTech">Pycharm</b>
+	    </div>
+	    <div id="extracurriculars">
+	      <h5><u>Extracurriculars</u></h5>
+	      <ul>
+		<li>Michigan Mars Rover Team <br>
+		  (Programmer on the Autonomous Rover Subteam)</li>
+		<li>Michigan Climbing Club</li>
+	      </ul>
+	    </div>
+	  </div>
+	  <div class="clr"></div>
+	</div>
+      </div>
+
+      <!-- projects -->
+      <div id="projects">
+	<h2 id="projectTitle">Projects</h2>
+	<div id="projectGrid">
+	  <div id="projectGridContainer">
+	    <!-- project 1  -->
+	    <div class="projectElement">
+	      <h3>Automatic Image Retargeting Tool</h3>
+	      Utilized techniques for content-aware image resizing in order to change the aspect ratio of images without distorting their content. Image compression achieved through applying the seam carving algorithm.
+	      <div id="plusplus" class="projectLangages">C++</div>
+	    </div>
+	    <!-- project 2  -->
+	    <div class="projectElement">
+	      <h3>CPU Pipeline Simulator</h3>
+	      Simulated RISC processor that takes in and runs linked LC2K assembly language executable files. Handles both data and control hazards with minimum stalling via data forwarding and branch prediction.
+	      <div id="c" class="projectLangages">C</div>
+	    </div>
+	    <!-- project 3  -->
+	    <div class="projectElement">
+	      <h3>Bayesian Classifier</h3>
+	      Machine Learning program in which miscellaneous comments and questions are automatically sorted into various categories according to their content. Employed natural language processing techniques to train the program before categorizing comments.
+	      <div id="plusplus" class="projectLangages">C++</div>
+	    </div>
+	    <!-- project 4  -->
+	    <div class="projectElement">
+	      <h3>Heuristic Pathfinding Tool</h3>
+	      Program that utilizes a recursive branch and bound algorithm to ascertain the shortest possible route that visits every coordinate from a list of coordinates, starting from and returning to an original position. Program was equipped with both a "fast" mode and an "optimal" mode, with one built for speed and the other built for accuracy in finding the optimal path.
+	      <div id="plusplus" class="projectLangages">C++</div>
+	    </div>
+	    <!-- project 5  -->
+	    <div class="projectElement">
+	      <h3>Redistricting Game</h3>
+	      Applied modern web technologies to remake a deprecated Adobe Flash game about Gerrymandering in the American political process. Reformatted various animations and graphics for interaction with my codebase to ensure the longevity of the educational tool.
+	      <div id="js" class="projectLangages">JavaScript</div>
+	    </div>
+	    <!-- project 6  -->
+	    <div class="projectElement">
+	      <h3>Instagram clone</h3>
+	      Dynamic webpage that utilizes databases and url paths to render HTML templates on the fly and form a reponsive instagram clone.
+	      <div id="python" class="projectLangages">Python</div>
+	    </div>
+	  </div>
+	</div>
+      </div>
+
+      <!-- questions -->
+      <div id="questions">
+	<h2 id="questionTitle">Questions?</h2>
+	<div id="qInfo">
+	  Get in touch with me at <b>wallingjdale@gmail.com</b>
+	</div>
+	<div id="questionLinks">
+	  <i class="fa fa-linkedin-square" style="font-size:48px" onclick="location.href = 'https://www.linkedin.com/in/jonathan-walling/';"></i>
+	  <i class="fa fa-github" style="font-size:48px" onclick="location.href = 'https://github.com/wallingj';"></i>
+	</div>
+      </div>
+
+      <!-- footer -->
+      <footer id="footerArea">
+	<h3>&copy 2020 Jonathan Walling</h3>
+      </footer>
+
+    </body>
+  </main>
+</html>

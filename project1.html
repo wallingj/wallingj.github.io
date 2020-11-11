@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>project 1</title>
+	<link rel="stylesheet" type="text/css" href="projects.css">
+</head>
+<header class="header">
+	Traveling Salesman Solver
+</header>
+<hr>
+<body>
+	<!-- home button -->
+	<a href="index.html#project1"><-</a>
+	<div class="description">
+		<div class="header prob">The Problem</div>
+		The goal of the Travelling Salesman Problem (TSP) is to optimally visit a set of locations whilst travelling the shortest distance. <br><br>
+		Such a problem has many far reaching applications - including how to most efficiently lay internet cables, build road systems, and of course how to travel a path of coordinates most efficiently. <br><br>
+		The following images show a pretty poor and a fairly good solution to this problem in which a person seeks to visit four houses while travelling the least total distance:
+		<div class="grid-images">
+		  <div class="grid-item bad"></div>
+		  <div class="grid-item good"></div>
+		</div>
+		Although the solution to this example comes fairly intuitively to most, the problem becomes exponentially harder the more locations one includes.<br><br>
+		In the following example, there are seven cities and a computer must run through 360 possible routes before determining the best one: <br>
+		<video controls loop autoplay muted>
+			<source src="tsp.mov" type="video/mp4">
+		</video>
+		Following the formula provided, 10 cities would require checking 1,814,400 possibilites. Imagine how many possibilities would have to be tried with hundreds of locations? With thousands? <br><br>
+		Checking every possible route and choosing the best becomes very inefficient very fast. <br>
+		So the question is: how to we determine a TSP faster than this method? <br><br>
+		<div class="header sol">The Solution</div>
+		The naive solution to the TSP is permuting (basically ordering) all possibile routes, calculating the total distance of that path, and chosing the path with the smallest total distance. <br><br>
+		A much better option is to do a similar algorithm, yet keep track of the best path you've seen so far in the possible paths you've computed. <br><br>
+		In the middle of computing another possible path, if the current total distance of the unfinished path is longer than the current best you have, then you discard that path and start looking at another possible path. <br><br>
+		This method is known as Branch and Bound, as your best path so far is the bound (if a path exceeds this bound, you discard it), and you 'branch' in computing different possible paths. <br><br><br>
+		<!-- footer -->
+		<footer id="mainFooter">
+			<h3>Language: C++</h3>
+		</footer>
+	</div>
+</body>
+</html>
