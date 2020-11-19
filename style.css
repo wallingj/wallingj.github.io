@@ -71,7 +71,7 @@ a, a:hover, a:active {
     background-image: url('images/purdyBeach.jpeg');
     background-size: cover;
     background-position: center;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 #introSpace {
@@ -177,12 +177,18 @@ a, a:hover, a:active {
 .ed { background: url('images/seal.png'); background-size: cover; }
 .pr { background: url('images/code.jpeg'); background-size: cover; }
 
+#educationBackground {
+    background-image: url('images/campus.jpg');
+    background-size: cover;
+    background-position: center;
+}
 #education {
     /*background-color: #00274c;*/
     background-color: #9c9b9a;
     color: #000;
     /*color:#e8eaed;*/
     padding-bottom: 30px;
+    opacity: 0.88;
 }
 #skinnyEducation { margin:auto; width:60%; }
 #educationTitle { 
@@ -245,6 +251,7 @@ a, a:hover, a:active {
     text-align: center;
     margin: auto;
     width: 80%;
+    color: #fff;
 }
 #projectTitle {
     text-align: center;
@@ -256,6 +263,10 @@ a, a:hover, a:active {
     padding-bottom: 10px;
     padding-top: 20px;
     margin: 0;
+    background-color: #817e8c;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 5px;
 }    
 #projectGridContainer {
     display: grid;
