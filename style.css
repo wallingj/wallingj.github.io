@@ -187,8 +187,8 @@ a, a:hover, a:active {
     background-color: #9c9b9a;
     color: #000;
     /*color:#e8eaed;*/
-    padding-bottom: 30px;
-    opacity: 0.88;
+    padding: 30px 0;
+    opacity: 0.9;
 }
 #skinnyEducation { margin:auto; width:60%; }
 #educationTitle { 
@@ -245,7 +245,7 @@ a, a:hover, a:active {
     background-image: url('images/fullCode.jpeg');
     background-size: cover;
     background-position: center;
-    padding-bottom: 10px;
+    padding: 30px 0;
 }
 #projects {
     text-align: center;
@@ -264,9 +264,11 @@ a, a:hover, a:active {
     padding-top: 20px;
     margin: 0;
     background-color: #817e8c;
+    opacity: 0.96;
     width: 200px;
     margin: auto;
     margin-bottom: 5px;
+    border-radius: 20px;
 }    
 #projectGridContainer {
     display: grid;
