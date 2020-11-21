@@ -343,7 +343,7 @@ a, a:hover, a:active {
     margin: auto;
     padding: 20px 0;
     margin-top: 20px;
-}    
+}
 #questionTitle { 
     text-align: center;
     font-family: serif;
@@ -393,10 +393,13 @@ a, a:hover, a:active {
 
     #coursework { float: none; width: 400px; margin: auto; }
     #langAndTech { float: none; width: 450px; margin: auto; }
-    
-    #projectGridContainer { grid-template-columns: repeat(2, 1fr); height: auto; }
+
     .outlineLang { margin: 10px 5px; height: 35px; }
     .outlineTech { margin-right: 5px; }
+    
+    #projectGridContainer { grid-template-columns: repeat(2, 1fr); height: auto; }
+
+    #questions { width: auto; margin: 20px; }    
 }
 
 
