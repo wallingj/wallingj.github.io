@@ -165,7 +165,7 @@ a, a:hover, a:active {
 }
 #profileLinks { padding-top: 15px; margin: auto; text-align: center;  }
 #profileLinks i { color: black; margin-right: 30px; }
-#profileLinks i:hover { cursor: pointer; color: purple; }    
+#profileLinks i:hover { cursor: pointer; color: purple; }
 
 #options {
     width: 60%;
@@ -389,12 +389,31 @@ a, a:hover, a:active {
     #greetingName { float: none; margin: auto; width: auto; margin-bottom: 15px; }
     #bigName { text-align: center; margin: auto; }
     #smallName { text-align: center: margin: auto; }
-    #greetingTerminal { float: none; max-width: 500px; }
+    #greetingTerminal { float: none; width: 380px; }
     #bio h3 { width: 90%; }
-    #options { grid-template-columns: repeat(1, 1fr); grid-gap: 40px; }
 
     #coursework { float: none; max-width: 400px; margin: auto; }
     #langAndTech { float: none; max-width: 450px; margin: auto; }
+
+    .outlineLang { margin: 10px 5px; height: 35px; }
+    .outlineTech { margin-right: 5px; }
+    
+    #projectGridContainer { grid-template-columns: repeat(2, 1fr); height: auto; }
+}
+
+@media(max-width: 575px) {
+    #introSpace { height: auto; }
+    #bigName { text-align: center; margin: auto; line-height: 40px; }
+    #greetingTerminal {  margin-top: 60px; }
+    
+    #options { grid-template-columns: repeat(1, 1fr); grid-gap: 40px; }
+    
+    #questions { width: auto; margin: 20px; }
+}
+
+@media(max-width: 500px) {
+    #greetingName { float: none; margin: auto; width: auto; margin-bottom: 15px; }
+    #greetingTerminal { float: none; width: auto; }
 
     .outlineLang { margin: 10px 5px; height: 35px; }
     .outlineTech { margin-right: 5px; }
