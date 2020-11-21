@@ -143,6 +143,7 @@ a, a:hover, a:active {
     padding-bottom: 10px;
     border-radius: 10px;
     opacity: 0.85;
+    margin-top: 10px;
 }
 #bio { width: 80%; margin: auto; }
 #bio h3 {
