@@ -411,6 +411,8 @@ a, a:hover, a:active {
     #blockM { float: none; margin: auto; display: block; }
     .left { float: none; margin: auto; text-align: center; }
     .right { float: none; margin: auto; text-align: center; }
+
+    #projectGridContainer { grid-template-columns: repeat(1, 1fr); height: auto; }
     
     #questions { width: auto; margin: 20px; }
 }
@@ -421,8 +423,6 @@ a, a:hover, a:active {
 
     .outlineLang { margin: 10px 5px; height: 35px; }
     .outlineTech { margin-right: 5px; }
-    
-    #projectGridContainer { grid-template-columns: repeat(2, 1fr); height: auto; }
 
     #questions { width: auto; margin: 20px; }    
 }
