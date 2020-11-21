@@ -382,7 +382,6 @@ a, a:hover, a:active {
 }
 
 @media(max-width: 1380px) {
-    #body { font-size: 20px; }
     #mainBackground { height: 350px; }
     #greeting { width: 80%; transform: translate(0%,0%); padding-top: 10px; }
     #greetingName { float: none; margin: auto; }
