@@ -98,8 +98,8 @@ a, a:hover, a:active {
     width: 600px;
     
 }
-#bigName { font-size: 40px; padding: 40px; }
-#smallName { font-size: 20px; }    
+#bigName { font-size: 40px; padding: 40px 0; }
+#smallName { font-size: 20px; }
 #greetingTerminal {
     float: right;
     background-color: #262522;
@@ -384,10 +384,10 @@ a, a:hover, a:active {
 @media(max-width: 1380px) {
     #mainBackground { height: 350px; }
     #greeting { width: 80%; transform: translate(0%,0%); padding-top: 10px; }
-    #greetingName { float: none; margin: auto; }
+    #greetingName { float: none; margin: auto; width: auto; }
     #bigName { text-align: center; margin: auto; }
     #smallName { text-align: center: margin: auto; }
-    #greetingTerminal { float: none; }
+    #greetingTerminal { float: none; width: auto; }
     #bio h3 { width: 90%; }
     #options { grid-template-columns: repeat(1, 1fr); grid-gap: 40px; }
 
