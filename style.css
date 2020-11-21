@@ -92,11 +92,9 @@ a, a:hover, a:active {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     word-spacing: 0.5em;
-    line-height: 0.5em;
     text-align: center;
     height: 150px;
     width: 600px;
-    
 }
 #bigName { font-size: 40px; padding: 40px 0; }
 #smallName { font-size: 20px; }
@@ -106,7 +104,7 @@ a, a:hover, a:active {
     color: #d6d6d6;
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     height: 175px;
-    width: 500px; 
+    max-width: 500px; 
     margin: auto;
     border-radius: 10px;
 }
@@ -364,10 +362,9 @@ a, a:hover, a:active {
 
 #footerArea {
     padding: 5px;
-    padding-left: 50px;
     margin-bottom: 0;
     font-weight: lighter;
-    margin: 20px;
+    margin: 20px auto;
 }
 #footerArea h3 {
     border: solid;
@@ -384,10 +381,10 @@ a, a:hover, a:active {
 @media(max-width: 1380px) {
     #mainBackground { height: 350px; }
     #greeting { width: 80%; transform: translate(0%,0%); padding-top: 10px; }
-    #greetingName { float: none; margin: auto; width: auto; }
+    #greetingName { float: none; margin: auto; width: auto; margin-bottom: 15px; }
     #bigName { text-align: center; margin: auto; }
     #smallName { text-align: center: margin: auto; }
-    #greetingTerminal { float: none; width: auto; }
+    #greetingTerminal { float: none; }
     #bio h3 { width: 90%; }
     #options { grid-template-columns: repeat(1, 1fr); grid-gap: 40px; }
 
