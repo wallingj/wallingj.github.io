@@ -389,8 +389,8 @@ a, a:hover, a:active {
     #bio h3 { width: 90%; }
     #options { grid-template-columns: repeat(1, 1fr); grid-gap: 40px; }
 
-    #coursework { float: none; width: 400px; margin: auto; }
-    #langAndTech { float: none; width: 450px; margin: auto; }
+    #coursework { float: none; max-width: 400px; margin: auto; }
+    #langAndTech { float: none; max-width: 450px; margin: auto; }
 
     .outlineLang { margin: 10px 5px; height: 35px; }
     .outlineTech { margin-right: 5px; }
