@@ -320,7 +320,7 @@ a, a:hover, a:active {
 .projectElement {
     background-color: #62606b;
     color: #e0e0e0;
-    height: 300px;
+    height: auto;
     border-radius: 5px;
     padding: 30px 20px;
 }
@@ -407,6 +407,10 @@ a, a:hover, a:active {
     #greetingTerminal {  margin-top: 60px; }
     
     #options { grid-template-columns: repeat(1, 1fr); grid-gap: 40px; }
+
+    #blockM { float: none; margin: auto; display: block; }
+    .left { float: none; margin: auto; text-align: center; }
+    .right { float: none; margin: auto; text-align: center; }
     
     #questions { width: auto; margin: 20px; }
 }
