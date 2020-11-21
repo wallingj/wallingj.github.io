@@ -164,18 +164,44 @@ a, a:hover, a:active {
 #profileLinks i { color: black; margin-right: 30px; }
 #profileLinks i:hover { cursor: pointer; color: purple; }    
 
-#options { width: 60%; margin: auto; }
-.grid-container { display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 90px; }
+#options {
+    width: 60%;
+    margin: auto;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 90px;
+}
 .grid-item {
     cursor: pointer;
     height: 210px;
     transition: all 0.5s;
     border-radius: 10px;
+    border: solid;
 }
-.grid-item:hover { opacity: 0.7; transform: scale(0.98); }
-.grid-item h1 { text-align: center; background-color: rgba(207,209,203,0.75); padding: 10px; } 
-.ed { background: url('images/seal.png'); background-size: cover; }
-.pr { background: url('images/code.jpeg'); background-size: cover; }
+.grid-item:hover {
+    opacity: 0.7;
+    transform: scale(0.98);
+}
+.grid-item h1 {
+    text-align: center;
+    background-color: rgba(207,209,203,0.75);
+    margin-top: 50px;
+    padding: 10px;
+    font-family: serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    word-spacing: 0.3em;
+} 
+#educationOption {
+    background: url('images/campus.jpg');
+    background-size: cover;
+}
+#projectsOption {
+    background: url('images/fullCode.jpeg');
+    background-size: cover;
+}
 
 #educationBackground {
     background-image: url('images/campus.jpg');
@@ -183,10 +209,8 @@ a, a:hover, a:active {
     background-position: center;
 }
 #education {
-    /*background-color: #00274c;*/
     background-color: #9c9b9a;
     color: #000;
-    /*color:#e8eaed;*/
     padding: 30px 0;
     opacity: 0.9;
 }
@@ -245,13 +269,13 @@ a, a:hover, a:active {
     background-image: url('images/fullCode.jpeg');
     background-size: cover;
     background-position: center;
-    padding: 30px 0;
 }
 #projects {
     text-align: center;
-    margin: auto;
-    width: 80%;
     color: #fff;
+    background-color: #9c9b9a;
+    padding: 30px 0;
+    opacity: 0.9;
 }
 #projectTitle {
     text-align: center;
@@ -263,7 +287,8 @@ a, a:hover, a:active {
     padding-bottom: 10px;
     padding-top: 20px;
     margin: 0;
-    background-color: #817e8c;
+    color: #e0e0e0;
+    background-color: #62606b;
     opacity: 0.96;
     width: 200px;
     margin: auto;
@@ -276,17 +301,21 @@ a, a:hover, a:active {
     grid-row-gap: 10px;
     grid-column-gap: 10px;
     opacity: 0.95;
+    margin: auto;
+    width: 80%;
 }
 .projectElement h3 {
     border: solid;
     border-style: thin;
     border-width: 2px;
     border-color: #fff;
+    color: #62606b;
+    background-color: #e0e0e0;
     border-radius: 20px;
     padding: 5px 0;
 }
 .projectElement {
-    background-color: #817e8c;
+    background-color: #62606b;
     color: #e0e0e0;
     height: 300px;
     border-radius: 5px;
