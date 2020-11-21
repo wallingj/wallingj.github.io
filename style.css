@@ -8,14 +8,14 @@ body {
     margin: 0;
 }
 
-button {
-    text-decoration:none;
-    border:none;
-    outline:none;
-    cursor: pointer;
-    color: #555;
-    background-color: #f4f4f4;
-}    
+/* button { */
+/*     text-decoration:none; */
+/*     border:none; */
+/*     outline:none; */
+/*     cursor: pointer; */
+/*     color: #555; */
+/*     background-color: #f4f4f4; */
+/* } */
 
 a, a:hover, a:active {
     text-decoration:none;
@@ -426,11 +426,3 @@ a, a:hover, a:active {
 
     #questions { width: auto; margin: 20px; }    
 }
-
-
-
-
-
-
-
-
